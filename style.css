@@ -35,30 +35,46 @@ p {
 	text-align: center;
 }
 
+
 @media screen and (min-width: 540px) {
 	.tym {
 		display: flex;
 		flex-wrap: wrap;
-		flex: 1 1 50%;
+		justify-content: space-evenly;
 	}
+
 	.vizitka {
+		flex: 1 0 calc((100% - 20px) / 4);
 		display: flex;
-		width: 50%;
 	}
 	
-}	
+	.popis {
+		text-align: left;
+	}
+
+	.foto img {
+		padding: 20px;
+	}
+	
+}
 
 @media screen and (min-width: 960px) {
-	.vizitka {
+	.tym {
 		display: flex;
-		flex: 1 1 25%;
+		flex-wrap: nowrap;
 	}
-}
-/* ---------------------------------------------------- */
+	.vizitka{
+		display: block;
+		flex: 0 1 calc((100% - 50px) / 4);
+	}
 
-/*
+}
+/* ---------------------------------------------------- 
+
+
 Breakpointy
 Mobil   0 - 539px
 Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
+
 */
